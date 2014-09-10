@@ -3,8 +3,8 @@ var App = App ||{
 		var raiz = Math.sqrt(ponto);
 		var roundRaiz = Math.round(raiz);
 		var x,y;
-		if( raiz % roundRaiz == 0){
-			if(raiz % 2 == 0){
+		if( raiz % roundRaiz == 0){ // diagonal principal
+			if(raiz % 2 == 0){ // verifica se raiz é par
 				x = raiz/-2;
 				y = raiz/-2;
 			}else{
@@ -13,7 +13,7 @@ var App = App ||{
 			}
 		}else{
 			var diferenca = ponto - (roundRaiz*roundRaiz);
-			if(roundRaiz % 2 == 0){
+			if(roundRaiz % 2 == 0){ // ponto mais próximo está na diagonal decrescente
 				x = roundRaiz/-2;
 				y = roundRaiz/-2;
 
