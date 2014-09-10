@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>PAA - Espital Quadrada</title>
+	<script type="text/javascript" src="App.js"></script>
+	
+</head>
+<body>
+<input type="text" id="entrada" placeholder="Digite um ponto" ><button id="ok" >Ok</button>
+
+<script type="text/javascript">
+        var App = App;
+        var btn = document.querySelector("#ok");
+        btn.addEventListener("click",function(){
+            var input = document.querySelector("#entrada");    
+            var ponto = input.value;
+            alert(App.O1(ponto));
+        });
+		
+		//var ponto = prompt("Defina um ponto");
+        //console.log(App.On(ponto));
+	</script>
+</body>
+</html>
